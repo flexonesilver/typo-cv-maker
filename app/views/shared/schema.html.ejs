@@ -1,0 +1,47 @@
+<%# { "layout":"/views/shared/empty.html.ejs", "title":"Model Schema" } %>
+<img width="192" src="https://www.themost.io/assets/images/most_logo_sw_240.png" alt="MOST Web Framework Logo">
+<h2><%=data.name%></h2>
+<% if  (typeof data.inherits !== 'undefined') { %>
+<h5>
+    Inherits:&nbsp;<a href="/<%=data.inherits%>/schema.html"><%=data.inherits%></a>
+</h5>
+<% } %>
+<table class="table">
+    <caption><%=data.title%></caption>
+    <thead>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Primary</th>
+        <th>Expandable</th>
+        <th>Inherited</th>
+    </thead>
+    <tbody>
+    <% for (var i=0;i<data.attributes.length;i++) {
+        var x = data.attributes[i];
+    %>
+        <tr>
+            <td><%=x.property || x.name%></td>
+            <td><%=x.title%></td>
+            <td><%=x.description|| ''%></td>
+            <% if  (context.model(x.type)) { %>
+            <td><a href="/<%=x.type%>/schema.html"><%=x.type%></a></td>
+            <% } else { %>
+            <td><%=x.type%></td>
+            <% } %>
+            <td class="text-center"><%=x.primary || ''%></td>
+            <td class="text-center"><%=x.expandable || ''%></td>
+            <td class="text-center">
+                <% if  (x.model === data.name) { %>
+                  &nbsp;
+                <% } else { %>
+                    <a href="/<%=x.model%>/schema.html"><%=x.model%></a>
+                <% } %>
+            </td>
+        </tr>
+    <%}%>
+    </tbody>
+
+</table>
+

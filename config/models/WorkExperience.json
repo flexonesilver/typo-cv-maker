@@ -1,0 +1,53 @@
+{"name": "WorkExperience", "id": 268022, "title": "Work Experience", "hidden": false,"version": "0.1", "fields": [
+    {
+        "name": "id",
+        "title": "ID",
+        "description": "ID",
+        "type": "Counter",
+        "nullable": false,
+        "primary": true
+    },
+    {
+        "name": "jobTitle",
+        "title": "Job Title",
+        "description": "Job Title",
+        "type": "Text",
+        "nullable": false
+    },
+    {
+        "name": "company",
+        "title": "Company Name",
+        "description": "Company Name",
+        "type": "Text",
+        "nullable": false
+    },
+    {
+        "name": "startDate",
+        "title": "Start Date",
+        "description": "Start Date",
+        "type": "Date"
+    },
+    {
+        "name": "endDate",
+        "title": "End Date",
+        "description": "End Date",
+        "type": "Date"
+    },
+    {
+        "name": "otherInfo",
+        "title": "Other Information",
+        "description": "Other Information",
+        "type": "Text"
+    },
+    {
+        "name": "person",
+        "title": "Person",
+        "description": "The person associated with this item.",
+        "type": "Person",
+        "nullable": false
+    }
+
+], "privileges":[
+  { "mask":15, "type":"global" }
+]
+}

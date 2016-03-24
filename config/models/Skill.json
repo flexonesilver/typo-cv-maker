@@ -1,0 +1,31 @@
+{"name": "Skill", "id": 268021, "title": "Skills", "hidden": false,"version": "0.1", "fields": [
+    {
+        "name": "id",
+        "title": "ID",
+        "description": "ID",
+        "type": "Counter",
+        "nullable": false,
+        "primary": true
+    },
+    {
+        "name": "name",
+        "title": "Name",
+        "description": "The name of the item.",
+        "type": "Text",
+        "nullable": false
+    },
+    {
+        "name": "person",
+        "title": "Person",
+        "description": "The person associated with this item.",
+        "type": "Person",
+        "nullable": false
+    }
+],
+    "views": [
+
+    ], "privileges":[
+  { "mask":15, "type":"global" },
+  { "mask":1, "type":"self", "filter":"person eq person()" }
+]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "sample-web-app",
+  "version": "0.1.0",
+  "description": "Sample Web Application",
+  "main": "server.js",
+  "repository": "",
+  "author": "",
+  "scripts": {},
+  "dependencies": {
+    "async": "^2.0.0-rc.2",
+    "moment": "^2.12.0",
+    "most-data": "*",
+    "most-data-sqlite": "*",
+    "most-web": "*",
+    "most-web-md": "*",
+    "unirest": "^0.4.2"
+  }
+}

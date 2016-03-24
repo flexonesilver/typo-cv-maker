@@ -1,0 +1,47 @@
+{
+  "name": "Language",
+  "id": 1037962775,
+  "title": "Foreign Languages",
+  "hidden": false,
+  "version": "0.1",
+  "fields": [
+    {
+        "name": "id",
+        "title": "ID",
+        "description": "ID",
+        "type": "Counter",
+        "nullable": false,
+        "primary": true
+    },
+    {
+        "name": "name",
+        "title": "Name",
+        "description": "The name of the item.",
+        "type": "Text"
+    },
+    {
+        "name": "nativeSpeaker",
+        "title": "Native Speaker",
+        "description": "Native Speaker",
+        "type": "Boolean"
+    },
+    {
+      "name": "level",
+      "title": "Language Level",
+      "description": "Language Level",
+      "type": "LanguageLevel",
+      "nullable": false,
+	    "expandable":true
+    },
+    {
+        "name": "person",
+        "title": "Person",
+        "description": "The person associated with this item.",
+        "type": "Person",
+        "nullable": false
+    }
+  ], "privileges":[
+  { "mask":1, "type":"global", "account":"*" },
+  { "mask":15, "type":"global" }
+]
+}

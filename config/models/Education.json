@@ -1,0 +1,61 @@
+{"name": "Education", "id": 268023, "title": "Education", "hidden": false,"version": "0.1", "fields": [
+    {
+        "name": "id",
+        "title": "ID",
+        "description": "ID",
+        "type": "Counter",
+        "nullable": false,
+        "primary": true
+    },
+    {
+        "name": "courseName",
+        "title": "Course Name",
+        "description": "Course Name",
+        "type": "Text",
+        "nullable": false,
+        "size": 60
+    },
+    {
+        "name": "institutionName",
+        "title": "Institution Name",
+        "description": "Institution Name",
+        "type": "Text",
+        "nullable": false,
+        "size": 60
+    },
+    {
+        "name": "startDate",
+        "title": "Start Date",
+        "description": "Start Date",
+        "type": "DateTime",
+        "nullable": true,
+        "size": 15
+    },
+    {
+        "name": "endDate",
+        "title": "End Date",
+        "description": "End Date",
+        "type": "DateTime",
+        "nullable": true,
+        "size": 15
+    },
+    {
+        "name": "otherInfo",
+        "title": "Other Information",
+        "description": "Other Information",
+        "type": "Text",
+        "nullable": true,
+        "size": 150
+    },
+    {
+        "name": "person",
+        "title": "Person",
+        "description": "The person associated with this item.",
+        "type": "Person",
+        "nullable": false
+    }
+
+], "privileges":[
+  { "mask":15, "type":"global" }
+]
+}

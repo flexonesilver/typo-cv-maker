@@ -1,0 +1,102 @@
+{
+    "name": "ContactPoint",
+    "id": 209,
+    "title": "Contact Point",
+    "hidden": false,
+    "sealed": false,
+    "abstract": false,
+    "version": "1.1",
+    "fields": [
+        {
+            "name": "id",
+            "title": "Id",
+            "type": "Counter",
+            "nullable": false,
+            "primary": true
+        },
+        {
+            "name": "additionalType",
+            "readonly":true,
+            "value":"javascript:return this.model.name;",
+            "type":"Text"
+        },
+        {
+            "name": "addressCountry",
+            "title": "Address Country",
+            "description": "The country. For example, USA. You can also provide the two-letter ISO 3166-1 alpha-2 country code.",
+            "type": "Text"
+        },
+        {
+            "name": "addressLocality",
+            "title": "Address Locality",
+            "description": "The locality. For example, Mountain View.",
+            "type": "Text"
+        },
+        {
+            "name": "addressRegion",
+            "title": "Address Region",
+            "description": "The region. For example, CA.",
+            "type": "Text"
+        },
+        {
+            "name": "postOfficeBoxNumber",
+            "title": "Post Office Box Number",
+            "description": "The post office box number for PO box addresses.",
+            "type": "Text"
+        },
+        {
+            "name": "postalCode",
+            "title": "Postal Code",
+            "description": "The postal code. For example, 94043.",
+            "type": "Text"
+        },
+        {
+            "name": "streetAddress",
+            "title": "Street Address",
+            "description": "The street address. For example, 1600 Amphitheatre Pkwy.",
+            "type": "Text"
+        },
+        {
+            "name": "location",
+            "title": "Geographic Location",
+            "description": "The geographic coordinates which represent the address location.",
+            "type": "GeoLocation",
+            "expandable":true
+        },
+        {
+            "name": "contactType",
+            "title": "Contact Type",
+            "description": "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.",
+            "type": "Text",
+            "size": 30,
+            "value":"javascript: return 'primary';"
+        },
+        {
+            "name": "email",
+            "title": "Email Address",
+            "description": "An email address associated with this item.",
+            "type": "Text",
+            "size": 120
+        },
+        {
+            "name": "telephone",
+            "title": "Telephone",
+            "description": "A telephone number associated with this item.",
+            "type": "Text",
+            "size": 30
+        },
+        {
+            "name": "faxNumber",
+            "title": "Fax Nunber",
+            "description": "A fax number associated with this item.",
+            "type": "Text",
+            "size": 30
+        }
+    ],
+    "privileges": [
+        {
+            "mask": 15,
+            "type": "global"
+        }
+    ]
+}

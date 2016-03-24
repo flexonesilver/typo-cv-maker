@@ -1,0 +1,28 @@
+{"name": "GeoLocation", "id": 8868182, "title": "Geographic Locations", "hidden": false, "sealed": false, "abstract": false, "version": "1.6", "fields": [
+    {
+        "name": "id",
+        "title": "Id",
+        "type": "Counter",
+        "nullable": false,
+        "primary": true
+    },
+    {
+        "name": "lat",
+        "title": "Latitude",
+        "description": "The latitude of a location.",
+        "type": "Decimal",
+        "scale":14
+    },
+    {
+        "name": "lng",
+        "title": "Longitude",
+        "description": "The longitude of a location.",
+        "type": "Decimal",
+        "scale":14
+    }
+],
+    "privileges":[
+        { "mask":1, "type":"global", "account":"*" },
+        { "mask":15, "type":"global" }
+    ]
+}

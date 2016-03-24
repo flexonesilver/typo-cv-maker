@@ -1,0 +1,22 @@
+{
+    "name": "Party",
+    "id": 1537955,
+    "title": "Person or Organization",
+    "hidden": false,
+    "sealed": false,
+    "abstract": false,
+    "version": "1.0",
+    "inherits": "Thing",
+    "fields": [{
+        "name": "id", "title": "Id", "type": "Integer", "nullable": false, "primary": true
+    }, {
+        "name": "contactPoint",
+        "title": "Contact Point",
+        "description": "A collection of contact points for a person or organization.",
+        "type": "ContactPoint",
+        "many":true
+    }], "privileges":[
+    { "mask":15, "type":"global" },
+    { "mask":1, "type":"global", "account":"*" }
+    ]
+}

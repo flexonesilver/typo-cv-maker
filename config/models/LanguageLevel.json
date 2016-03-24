@@ -1,0 +1,41 @@
+{
+    "name": "LanguageLevel",
+    "id": 1037962,
+    "title": "Language Level",
+    "hidden": false,
+    "sealed": false,
+    "abstract": false,
+    "version": "1.0",
+    "fields": [{
+        "name": "id",
+        "title": "Id",
+        "type": "Integer",
+        "nullable": false,
+        "primary": true
+    }, {
+        "name": "name",
+        "title": "Name",
+        "type": "Text",
+        "nullable": false,
+        "size":80
+    }, {
+        "name": "description",
+        "title": "Description",
+        "type": "Text",
+        "nullable": false
+    }],
+    "privileges":[
+        { "mask":1, "type":"global", "account":"*" },
+        { "mask":15, "type":"global" }
+    ],
+    "seed":[ {
+            "id":1, "name":"Basic Speaker", "description":"Basic Speaker (A1 and A2 Levels)"
+        },
+        {
+            "id":2, "name":"Independent Speaker", "description":"Independent Speaker (B1 and B2 Levels)"
+        },
+        {
+            "id":3, "name":"Proficient Speaker", "description":"Proficient Speaker (C1 and C2 Levels)"
+        }
+    ]
+}
